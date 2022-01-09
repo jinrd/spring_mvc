@@ -47,7 +47,7 @@ public class MyController {
 	@RequestMapping(value="my/my_body",method = RequestMethod.GET)
 	public ResponseEntity<String> myBody() {
 		HttpHeaders headers = new HttpHeaders();
-		headers.add("Content-Type","text/html; Csharset=UTF-8");
+		headers.add("Content-Type","text/html; Cssharset=UTF-8");
 		String html = "<h2>korea</h2> <h2>asdf</h2>";
 		return new ResponseEntity<String>(html,HttpStatus.OK);
 	}

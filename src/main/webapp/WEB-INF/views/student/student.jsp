@@ -10,30 +10,30 @@
 </head>
 <body>
 	<h2>학생 정보 등록</h2>
-	<form:form method="post" action="add/student" commandName="student">
+	<form method="post" action="add/student.do">
 		<table>
 			<tr>
 				<td>
-					<form:label path="id">id</form:label>
+					<label>id</label>
 				</td>
 				<td>
-					<form:input path="id"/>
+					<input type="text" name="id"/>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<form:label path="name">이름</form:label>
+					<label>이름</label>
 				</td>
 				<td> 
-					<form:input path="name"/>
+					<input type="text" name = "name"/>
 				</td>
 			</tr>
 			<tr>
 				<td>
-					<form:label path="age">나이</form:label>
+					<label>나이</label>
 				</td>
 				<td>
-					<form:input path="age"></form:input>
+					<input type="text" name="age"></input>
 				</td>
 			</tr>
 			<tr>
@@ -43,7 +43,7 @@
 			</tr>
 		</table>
 
-	</form:form>
+	</form>
 
 </body>
 </html>
