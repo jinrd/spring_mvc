@@ -32,6 +32,10 @@ public class StudentController {
 	// 방법 2
 	@RequestMapping(value = "/student02.do" ,method = RequestMethod.GET)
 	public ModelAndView student02() {
+		
+		// 학생 조회
+		studentDAO.select();
+		
 		//return new ModelAndView("student/student","student",new Student());
 		return new ModelAndView("student/student","stduent",new Student());
 		
@@ -43,4 +47,5 @@ public class StudentController {
 		studentDAO.create(student);
 		return "student/result";
 	}
+	
 }
